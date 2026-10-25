@@ -6,7 +6,7 @@ This page explains the differences between package formats and how to install an
 Supported package formats:
 
 1. [Arch Linux Packages](#arch-linux-packages) (pacman, .tar.zst)
-2. [Flatpaks](#flatpaks) (Store, .flatpakref, .flatpak)
+2. [Flatpaks](#flatpak) (Store, .flatpakref, .flatpak)
 3. [AppImages](#appimages) (.appimage)
 4. [Arch User Repository](#arch-user-repository) (yay & paru)
 
@@ -17,7 +17,7 @@ On Arch Linux, the package manager is `pacman`.
 
 Due to various reasons, pacman is supposed to be used only via terminal and with admin privileges.
 
-Here is some basic usage for `pacman`. If you want more detailed instructions, check [pacman on the Arch Wiki](https://wiki.archlinux.org/title/Pacman )
+Here is some basic usage for `pacman`. If you want more detailed instructions, check [Pacman on the Arch Wiki](https://wiki.archlinux.org/title/Pacman )
 
 ### How to install a package
 ```bash
@@ -44,7 +44,8 @@ sudo pacman -Syu
 sudo pacman -Ss package
 ```
 
-## Flatpaks
+## Flatpak
+
 Flatpak is a special packaging format that allows you to install applications in a **sandboxed** environment.
 
 This means you can easily manage what permissions an application has, like you do on smartphones.
