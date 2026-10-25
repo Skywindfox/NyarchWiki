@@ -13,6 +13,7 @@ nav:
     - 'applications.md'
     - 'nyarch_applications.md'
     - 'nyarchassistant.md'
+    - 'run_games.md'
 
 theme:
   name: material
