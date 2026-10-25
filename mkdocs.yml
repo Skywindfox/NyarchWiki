@@ -13,6 +13,13 @@ nav:
     - 'applications.md'
     - 'nyarch_applications.md'
     - 'nyarchassistant.md'
+    - 'run_games.md'
+
+markdown_extensions:
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 theme:
   name: material
