@@ -1,8 +1,6 @@
 # Nyarch Linux で Windows ゲームを遊ぶ
 
-> // todo : この日本語の項目は機械翻訳を使用しており、添削が必要です。どうもありがとう！
-
-Nyarch Linux で Windows ゲームを遊ぶ方法は、主に **Steam + Proton**、**Bottles**、**Lutris** の 3 つです。それぞれ役割が違うだけで排他的な関係ではなく、2 つ、あるいは 3 つすべてを併用している人も多くいます。
+Nyarch Linux で Windows ゲームを遊ぶ方法は、主に **Steam + Proton**、**Bottles**、**Lutris** の 3 つです。それぞれにそれぞれの強みがあり、2つ、あるいは 3つすべてを併用している人も多くいます。
 
 このページでは、Nyarch 上で実際に使える方法と、そのインストール手順だけを紹介します。Steam で購入したゲームなら Steam を優先してください。GOG、Epic、itch.io、単体のインストーラーから入手したゲームなら、Bottles か Lutris のほうが向いています。
 
@@ -46,11 +44,11 @@ flatpak install flathub com.usebottles.bottles
 
 Flathub のページや、GNOME ソフトウェア / Bazaar からクリックしてインストールすることもできます。Nyarch の Flatpak ガイドでも、Bottles は「Flatpak 向きの代表例」として挙げられています。
 
-Bottles の中心となる概念は **Bottle**（ボトル）です。各 Bottle は独立した Wine プレフィックスで、Windows のバージョン、DXVK、VKD3D、依存関係などを個別に設定できます。システム全体に「Wine をインストール」する必要はなく、Bottles が必要な Wine のバージョンとランタイムを自分で管理します。
+Bottles の中心となる概念は **Bottle**（ボトル）です。各 Bottle は独立した Wine プレフィックスで、Windows のバージョン、DXVK、VKD3D、依存関係などを個別に設定できます。システム全体に「Wine をインストール」する必要はなく、Bottles が必要な Wine のバージョンとランタイムをBottles 自身が管理することが出来ます。
 
 ## Lutris
 
-Lutris は「すべてのランチャーを 1 か所で管理する」用途に向いています。GOG、Epic、Battle.net、エミュレーター、単体のインストーラー、そしてコミュニティが保守しているインストールスクリプトです。
+Lutris は「すべてのランチャーを 1 か所で管理する」用途に向いています。例えばGOG、Epic、Battle.net、エミュレーター、単体のインストーラー、そしてコミュニティが保守しているインストールスクリプトといった形式に対応しています。
 
 Nyarch では Lutris を 2 通りの方法でインストールできます。Flatpak の場合：
 
@@ -70,7 +68,7 @@ GE-Proton が必要なゲームを Lutris で動かすことが多いなら、**
 
 Steam、Bottles、Lutris のどれを使う場合でも、GE-Proton、Wine-GE、Luxtorpeda といったコミュニティ製の互換レイヤーが必要になることがあります。手動でダウンロードして配置するのは面倒なので、ProtonUp-Qt と ProtonPlus という 2 つの GUI 管理ツールを使うと便利です。
 
-Steam と Lutris だけを使っているなら、ProtonUp-Qt で十分にまかなえます。
+Steam と Lutris だけを使っているなら、ProtonUp-Qt で十分にまかなえます。一方、Bottles を使用する場合はProtonPlus が必要です。
 
 ### ProtonUp-Qt
 
